@@ -1,0 +1,73 @@
+Built in types in Elixir
+  Value types
+    Integers
+    Ex. 1234, 0xcafe, 0o765, 0b1010
+
+    Numbers (floating point)
+    Ex. 1.0, 0.2345,
+
+    Atoms
+    Ex. :a, :is_true?, :var@2, :<>, :===, :"func/3", :"long word"
+
+    Ranges                (this is just structure but for conveniency it is a value type)
+    Start...End
+
+    Regular expressions   (this is just a structure but for conveniency its value type)
+    Ex. ~2{regexp}
+
+  System types
+    PIDs and ports
+    PID is reference to local or remote process
+    port is a reference to a resource that you will be reading or writing
+
+    References
+    make_ref = to create global unique reference
+
+  Collection types
+    Tuples
+    An ordered collection of values that can not be modified
+    Ex. {1,2}, {:ok, 10, "next"}, {:error, :enoent}
+
+    Lists
+    Linked datastructure. Easy to traverse linearly. [head|tail]
+      Keyword Lists
+      Key value paired lists. [name: "n", value: "v"] => [{:name, "n"}, {:value, "v"}]
+
+    Maps
+    Collection of key/value pair
+    %{key => value, key => value}
+
+    Binaries
+    Sequence of bits and bytes
+
+  Function (They are type too)
+
+
+Operators
+  Comparision Operators
+  a === b
+  a == b
+  a !== b
+  a != b
+  >
+  >=
+  <
+  <=
+
+  Boolean Operators
+  a or b
+  a and b
+  not a
+
+  Relaxed boolean Operators
+  a || b
+  a && b
+  !a
+
+  Arithmetic Operators
+  + - * / div rem
+
+  Joint Operators
+  b1 <> b2
+  a ++ b
+  a -- b
